@@ -1,0 +1,22 @@
+# AIDetector runtime deps
+
+
+# WebUI
+gradio==6.26.0
+
+# HuggingFace model stack (ViT detector + CLIP backbone)
+transformers==5.16.1
+torch>=2.0
+huggingface_hub>=0.20
+safetensors>=0.4
+
+# CLIP linear classifier loader.
+# Pinned to match the trained clip_clf.joblib's sklearn version (1.6.1) so
+# joblib.load doesn't warn about a version mismatch.
+scikit-learn==1.6.1
+joblib>=1.3
+
+# Imaging / numerics (also used by the no-ML forensic tabs: ELA / Noise / FFT)
+pillow>=10
+numpy>=1.24
+scipy>=1.10

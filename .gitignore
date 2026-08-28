@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Secrets / env
+.env
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Project artifacts — regenerated on first run, or sensitive (don't commit)
+# downloaded model weights (~GBs)
+.hf_cache/
+# contains certificate.pem (TLS cert)
+.gradio/
+# local classifier override of the HF repo
+clip_clf.joblib
+
+# Large binaries
+paper.pdf
